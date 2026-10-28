@@ -1,0 +1,455 @@
+:root {
+  --font-family: "Poppins", -apple-system, BlinkMacSystemFont, sans-serif;
+  --bg-light: #f7f9fc;
+  --bg-white: #ffffff;
+  --text-primary: #12151a;
+  --text-muted: #8c939d;
+  --accent-blue: #5b94ff;
+  --accent-blue-hover: #4880eb;
+  --border-light: #ebeef2;
+  --shadow-soft: 0 12px 30px rgba(0, 0, 0, 0.05);
+  --card-radius: 18px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--font-family);
+  background-color: var(--bg-white);
+  color: var(--text-primary);
+  -webkit-font-smoothing: antialiased;
+}
+.hero-section {
+  position: relative;
+  width: 100%;
+  min-height: 85vh;
+
+  background-image: url("cars.images/Audi.png");
+  background-position: center top;
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding-bottom: 40px;
+}
+.nav-container {
+  max-width: 1280px;
+  width: 90%;
+  margin: 20px auto 0;
+}
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: var(--bg-white);
+  padding: 12px 28px;
+  border-radius: 40px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.04);
+}
+.logo {
+  font-size: 24px;
+  font-weight: 700;
+  color: #1a1a1a;
+  text-decoration: none;
+  letter-spacing: -0.5px;
+}
+.logo span {
+  color: var(--accent-blue);
+}
+.nav-links {
+  display: flex;
+  gap: 28px;
+  list-style: none;
+}
+.nav-links a {
+  text-decoration: none;
+  font-size: 14px;
+  color: #555;
+  font-weight: 500;
+  transition: color 0.2s ease;
+}
+.nav-links a:hover,
+.nav-links a.active {
+  color: #000;
+  font-weight: 600;
+}
+.nav-actions {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+.search-box {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background-color: #f1f3f6;
+  border-radius: 20px;
+  padding: 8px 16px;
+}
+.search-box input {
+  border: none;
+  background: transparent;
+  outline: none;
+  font-size: 13px;
+  width: 90px;
+  color: #333;
+}
+
+.profile-btn {
+  background-color: #12151a;
+  color: #fff;
+  border: none;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+.hero-body {
+  max-width: 1280px;
+  width: 90%;
+  margin: auto auto 0;
+}
+
+.hero-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  margin-bottom: 40px;
+}
+
+.hero-content h1 {
+  font-size: 54px;
+  line-height: 1.05;
+  font-weight: 700;
+  letter-spacing: -1.5px;
+}
+
+.hero-content p {
+  max-width: 440px;
+  font-size: 13px;
+  line-height: 1.6;
+  color: #4f5665;
+}
+
+.booking-wrapper {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+}
+.booking-tabs {
+  display: flex;
+  gap: 8px;
+  margin-left: 20px;
+}
+
+.tab-btn {
+  border: none;
+  background-color: #e5e8ed;
+  font-size: 13px;
+  font-weight: 500;
+  padding: 8px 20px;
+  border-radius: 12px 12px 0 0;
+  cursor: pointer;
+  color: #555;
+  transition: all 0.2s ease;
+}
+
+.tab-btn.active {
+  background-color: var(--bg-white);
+  color: #000;
+  font-weight: 600;
+  box-shadow: 0 -4px 10px rgba(0, 0, 0, 0.03);
+}
+
+.booking-form {
+  display: grid;
+  grid-template-columns: 1.5fr 1px 1.5fr 1px 1fr 1px 1fr 1.2fr;
+  align-items: center;
+  background-color: var(--bg-white);
+  padding: 12px 18px 12px 28px;
+  border-radius: 16px;
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.08);
+}
+
+.input-field {
+  display: flex;
+  flex-direction: column;
+  padding: 4px 14px;
+}
+
+.input-field label {
+  font-size: 11px;
+  font-weight: 600;
+  color: #12151a;
+  margin-bottom: 4px;
+}
+
+.input-field input {
+  border: none;
+  outline: none;
+  font-size: 12px;
+  color: #6d7580;
+  background: transparent;
+}
+
+.divider {
+  width: 1px;
+  height: 38px;
+  background-color: var(--border-light);
+}
+
+.search-submit-btn {
+  background-color: var(--accent-blue);
+  color: #fff;
+  border: none;
+  padding: 16px 28px;
+  border-radius: 12px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.search-submit-btn:hover {
+  background-color: var(--accent-blue-hover);
+}
+
+.page-container {
+  max-width: 1280px;
+  width: 90%;
+  margin: 60px auto 100px;
+}
+
+.section {
+  margin-bottom: 70px;
+}
+
+.section-title {
+  font-size: 32px;
+  font-weight: 700;
+  letter-spacing: -0.5px;
+}
+
+.category-section .section-title {
+  margin-bottom: 24px;
+}
+
+.category-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+
+.category-card {
+  position: relative;
+  height: 260px;
+  border-radius: var(--card-radius);
+  background-size: cover;
+  background-position: center;
+  background-color: #dce2e9;
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  overflow: hidden;
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+.category-card:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-soft);
+}
+
+.category-card h3 {
+  font-size: 20px;
+  font-weight: 600;
+  color: #12151a;
+  line-height: 1.2;
+}
+
+.arrow-btn {
+  align-self: flex-end;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  background-color: var(--accent-blue);
+  color: #fff;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: bold;
+  transition: background-color 0.2s ease;
+}
+
+.arrow-btn:hover {
+  background-color: var(--accent-blue-hover);
+}
+
+.section-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 24px;
+}
+
+.view-all-btn {
+  background-color: var(--accent-blue);
+  color: #fff;
+  text-decoration: none;
+  font-size: 12px;
+  font-weight: 500;
+  padding: 8px 18px;
+  border-radius: 20px;
+  transition: background-color 0.2s ease;
+}
+
+.view-all-btn:hover {
+  background-color: var(--accent-blue-hover);
+}
+
+.trend-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+
+.trend-card {
+  background-color: var(--bg-light);
+  border-radius: var(--card-radius);
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 280px;
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+.trend-card:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-soft);
+}
+.trend-card .card-head h3 {
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 1.2;
+}
+
+.trend-card .card-img-wrap {
+  width: 100%;
+  height: 120px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 10px 0;
+}
+
+.trend-card .card-img-wrap img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+}
+
+.trend-card .card-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.trend-card .price {
+  font-size: 13px;
+  color: var(--text-muted);
+}
+
+.trend-card .price strong {
+  font-size: 18px;
+  color: var(--text-primary);
+}
+
+.book-btn {
+  background-color: var(--bg-white);
+  border: 1px solid var(--border-light);
+  padding: 8px 16px;
+  font-size: 12px;
+  font-weight: 600;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.book-btn:hover {
+  background-color: #12151a;
+  color: #fff;
+  border-color: #12151a;
+}
+
+.hero-content {
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 16px;
+}
+
+.booking-form {
+  grid-template-columns: repeat(2, 1fr);
+  gap: 14px;
+  padding: 20px;
+}
+
+.divider {
+  display: none;
+}
+
+.search-submit-btn {
+  grid-column: span 2;
+}
+
+.category-grid,
+.trend-grid {
+  grid-template-columns: repeat(2, 1fr);
+}
+
+@media (max-width: 650px) {
+  .navbar .nav-links {
+    display: none;
+  }
+
+  .hero-content h1 {
+    font-size: 38px;
+  }
+
+  .booking-form {
+    grid-template-columns: 1fr;
+  }
+
+  .search-submit-btn {
+    grid-column: span 1;
+  }
+
+  .category-grid,
+  .trend-grid {
+    grid-template-columns: 1fr;
+  }
+}
+.site-footer {
+  width: 100%;
+  background-color: #f4f5f7;
+  /* Attach the image as a background */
+  background-image: url("cars.images/Audi.png");
+  background-repeat: no-repeat;
+  background-position: center bottom;
+  background-size: contain; /* or cover, depending on whether it needs to crop or fit */
+  padding: 50px 0 50px;
+}
